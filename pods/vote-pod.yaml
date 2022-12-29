@@ -3,13 +3,13 @@ kind: Pod
 metadata:
   name: voting-app-pod
   labels:
-    name: voting-app-pod
-    app: vote
-    role: ui
+     app: python
+     role: vote
+     version: v1
 spec:
   containers:
   - name: voting-app
-    image: dockersamples/examplevotingapp_vote
+    image: schoolofdevops/vote:v1
     ports:
          - containerPort: 80
 
